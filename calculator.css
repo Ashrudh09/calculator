@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    gap: 5px;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

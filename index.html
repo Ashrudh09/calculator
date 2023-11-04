@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h1>It is my calculator</h1>
+    <div class="display">
+        <input type="text" id="display" readonly>
+    </div>
+    <div class="btn">
+        <div class="row">
+            <button onclick="maths=maths+'7';
+            document.querySelector('#display').value = maths; ">7</button>
+            <button onclick="maths=maths+'8';
+            document.querySelector('#display').value = maths; ">8</button>
+            <button  onclick="maths=maths+'9';
+            document.querySelector('#display').value = maths ;">9</button>
+            <button onclick="maths='';
+            document.querySelector('#display').value = maths ;">C</button>
+        </div>
+
+        <div class="row">
+            <button onclick="maths=maths+'4'
+            document.querySelector('#display').value = maths ">4</button>
+            <button onclick="maths=maths+'5'
+            document.querySelector('#display').value = maths ">5</button>
+            <button onclick="maths=maths+'6'
+            document.querySelector('#display').value = maths ">6</button>
+            <button onclick="maths=maths+'+'
+            document.querySelector('#display').value = maths ">+</button>
+        </div>
+        <div class="row">
+            <button onclick="maths=maths+'1'
+            document.querySelector('#display').value = maths ">1</button>
+            <button onclick="maths=maths+'2'
+            document.querySelector('#display').value = maths ">2</button>
+            <button onclick="maths=maths+'3'
+            document.querySelector('#display').value = maths ">3</button>
+            <button onclick="maths=maths+'-'
+            document.querySelector('#display').value = maths ">-</button>
+        </div>
+        <div class="row">
+            <button onclick="maths=maths+'*'
+            document.querySelector('#display').value = maths ">*</button>
+            <button onclick="maths=maths+'0'
+            document.querySelector('#display').value = maths ">0</button>
+            <button onclick="maths=maths+'/'
+            document.querySelector('#display').value = maths ">/</button>
+            <button onclick="maths=maths+'.'
+            document.querySelector('#display').value = maths ">.</button>
+        </div>
+        <div class="row">
+            <button onclick="
+            let result =eval(maths)
+            maths=result
+            document.querySelector('#display').value = maths">=</button>
+            <button onclick="maths=maths+'%'
+            document.querySelector('#display').value = maths ">%</button>
+            <button onclick="maths=maths+'00'
+            document.querySelector('#display').value = maths ">00</button>
+        </div>
+
+    </div>
+
+    <script>
+        let maths = "";
+        document.querySelector("#display").value = maths
+    </script>
+</body>
+</html>
